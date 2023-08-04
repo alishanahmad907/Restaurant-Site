@@ -114,7 +114,6 @@ body{
         height: 20px;
     }
 }
-
 #collapsable-nav a {
     font-size: 1.2em ;
 }
@@ -122,3 +121,20 @@ body{
     font-size: 1em;
     margin-right: 5px;
 }
+#call-btn>a{
+    display: block;
+    margin: 0px 20px;
+    padding: 10px;
+    border: 2px solid #fff;
+    font-size: 1.5em;
+    background-color: #f6b319;
+    color: #951c49;
+}
+#xs-deliver{
+    margin-top: 5px;
+    font-size: .7em;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    text-align: center;
+}
+/* Header Complete */
