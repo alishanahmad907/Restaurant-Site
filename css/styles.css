@@ -74,7 +74,6 @@ body {
   text-align: right;
   padding-right: 15px;
 }
-
 .navbar-header button.navbar-toggle,
 .navber-header .icon-bar {
   border: 1px solid #61122f;
@@ -83,6 +82,53 @@ body {
   clear: both;
   margin-top: -30px;
 }
+
+
+
+/* Header Complete */
+
+/* Home Page */
+
+/* the 3 tiles */
+#menu-tile {
+  background: url(../images/menu-tile.jpg) no-repeat;
+  background-position: center;
+}
+#special-tile {
+  background: url(../images/specials-tile.jpg) no-repeat;
+  background-position: center;
+}
+
+#menu-tile,
+#special-tile,
+#map-tile {
+  height: 250px;
+  width: 100%;
+  margin-bottom: 15px;
+  position: relative;
+  border: 2px solid #3f0c1f;
+  overflow: hidden;
+}
+#menu-tile:hover,
+#special-tile:hover,
+#map-tile:hover {
+  box-shadow: 0 1px 5px 1px #785e5e;
+}
+#menu-tile span,
+#special-tile span,
+#map-tile span {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 1.6em;
+  text-transform: uppercase;
+  background-color: #000;
+  opacity: 0.5;
+  color: #fff;
+}
+
 /* large devices only */
 @media (min-width: 1200px) {
   .container .jumbotron {
@@ -138,7 +184,35 @@ body {
   .navbar-brand p img {
     height: 20px;
   }
+  #call-btn > a {
+    display: block;
+    margin: 0px 20px;
+    padding: 10px;
+    border: 2px solid #fff;
+    font-size: 1.5em;
+    background-color: #f6b319;
+    color: #951c49;
+  }
+  #xs-deliver {
+    margin-top: 5px;
+    font-size: 0.7em;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  .container .jumbotron {
+  margin-top: 30px;
+  padding: 0px;
+  box-shadow: 0 0 50px #3f0c1f;
+  border: 2px solid #3f0c1f;
 }
+
+#menu-tile, #special-tile {
+  width: 360px;
+  margin: 0 auto 15px;
+}
+}
+
 #collapsable-nav a {
   font-size: 1.2em;
 }
@@ -146,28 +220,33 @@ body {
   font-size: 1em;
   margin-right: 5px;
 }
-#call-btn > a {
-  display: block;
-  margin: 0px 20px;
-  padding: 10px;
-  border: 2px solid #fff;
-  font-size: 1.5em;
-  background-color: #f6b319;
-  color: #951c49;
-}
-#xs-deliver {
-  margin-top: 5px;
-  font-size: 0.7em;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  text-align: center;
-}
-/* Header Complete */
 
-/* Home Page */
-.container .jumbotron {
+/* footer */
+.panel-footer{
   margin-top: 30px;
-  padding: 0px;
-  box-shadow: 0 0 50px #3f0c1f;
-  border: 2px solid #3f0c1f;
+  padding-top: 35px;
+  padding-bottom: 30px;
+  background-color: #222;
+  border-top: 0;
+}
+
+.panel-footer div.row{
+  margin-bottom: 35px;
+}
+#hours, #address{
+  line-height: 2;
+}
+#hours>span, #address>span{
+  font-size: 1.3em;
+}
+#address p{
+  color: #556c3e;
+  font-size: 0.8em;
+  line-height: 1.8em;
+}
+#testimonials{
+  font-style: italic;
+}
+#testimonials p:nth-child(2){
+  margin-top: 25px;
 }
