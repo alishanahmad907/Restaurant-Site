@@ -83,8 +83,6 @@ body {
   margin-top: -30px;
 }
 
-
-
 /* Header Complete */
 
 /* Home Page */
@@ -127,6 +125,46 @@ body {
   background-color: #000;
   opacity: 0.5;
   color: #fff;
+}
+
+#collapsable-nav a {
+  font-size: 1.2em;
+}
+#collapsable-nav a span {
+  font-size: 1em;
+  margin-right: 5px;
+}
+
+/* footer */
+.panel-footer {
+  margin-top: 30px;
+  padding-top: 35px;
+  padding-bottom: 30px;
+  background-color: #222;
+  border-top: 0;
+}
+
+.panel-footer div.row {
+  margin-bottom: 35px;
+}
+#hours,
+#address {
+  line-height: 2;
+}
+#hours > span,
+#address > span {
+  font-size: 1.3em;
+}
+#address p {
+  color: #556c3e;
+  font-size: 0.8em;
+  line-height: 1.8em;
+}
+#testimonials {
+  font-style: italic;
+}
+#testimonials p:nth-child(2) {
+  margin-top: 25px;
 }
 
 /* large devices only */
@@ -200,53 +238,29 @@ body {
     text-transform: uppercase;
     text-align: center;
   }
+  /* tiles */
   .container .jumbotron {
-  margin-top: 30px;
-  padding: 0px;
-  box-shadow: 0 0 50px #3f0c1f;
-  border: 2px solid #3f0c1f;
-}
+    margin-top: 30px;
+    padding: 0px;
+    box-shadow: 0 0 50px #3f0c1f;
+    border: 2px solid #3f0c1f;
+  }
 
-#menu-tile, #special-tile {
-  width: 360px;
-  margin: 0 auto 15px;
-}
-}
+  #menu-tile,
+  #special-tile {
+    width: 360px;
+    margin: 0 auto 15px;
+  }
 
-#collapsable-nav a {
-  font-size: 1.2em;
-}
-#collapsable-nav a span {
-  font-size: 1em;
-  margin-right: 5px;
-}
-
-/* footer */
-.panel-footer{
-  margin-top: 30px;
-  padding-top: 35px;
-  padding-bottom: 30px;
-  background-color: #222;
-  border-top: 0;
-}
-
-.panel-footer div.row{
-  margin-bottom: 35px;
-}
-#hours, #address{
-  line-height: 2;
-}
-#hours>span, #address>span{
-  font-size: 1.3em;
-}
-#address p{
-  color: #556c3e;
-  font-size: 0.8em;
-  line-height: 1.8em;
-}
-#testimonials{
-  font-style: italic;
-}
-#testimonials p:nth-child(2){
-  margin-top: 25px;
+  /* Footer */
+  .panel-footer section{
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  .panel-footer section:nth-child(3){
+    margin-bottom: 0;;
+  }
+  .panel-footer section hr{
+    width: 50%;;
+  }
 }
